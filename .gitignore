@@ -1,0 +1,16 @@
+# 本機金鑰與環境設定；保留可公開的範例檔
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.streamlit/secrets.toml
+
+# 各週自行建立的環境與暫存檔
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+.apptest-temp/
+.DS_Store
+Thumbs.db

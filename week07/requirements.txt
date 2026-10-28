@@ -1,0 +1,4 @@
+# Windows／Python3.14.0獨立環境已驗證；2026-10-23。
+streamlit==1.63.0
+openai==2.49.0
+python-dotenv==1.2.3
