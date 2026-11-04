@@ -1,0 +1,5 @@
+# 第8週Pydantic版；Python3.14，固定版本與課程快照對齊。
+openai==2.49.0
+streamlit==1.63.0
+python-dotenv==1.2.3
+pydantic==2.14.1
