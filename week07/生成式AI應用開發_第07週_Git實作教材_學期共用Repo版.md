@@ -41,22 +41,22 @@
 https://github.com/shuochenghu/115_1_GenAI-App-Development-Student.git
 ```
 
-| 用途 | Repo | 學生操作 |
-|---|---|---|
-| 教材來源 | `shuochenghu/115_1_GenAI-App-Development-Student` | 下載老師提供的教材 |
-| 自己的作業 | `自己的帳號/115_1_GenAI-APP-Development` | 表單登記 Repo、Clone／Pull、完成作業、Commit／Push 與部署 |
+| 用途       | Repo                                              | 學生操作                                                  |
+| ---------- | ------------------------------------------------- | --------------------------------------------------------- |
+| 教材來源   | `shuochenghu/115_1_GenAI-App-Development-Student` | 下載老師提供的教材                                        |
+| 自己的作業 | `自己的帳號/115_1_GenAI-APP-Development`          | 表單登記 Repo、Clone／Pull、完成作業、Commit／Push 與部署 |
 
 <font color="#C62828"><b>老師的 Repo 用來取得教材；自己的 Repo 才是實作、保存與供老師檢視的位置。</b></font> 對自己的 Repo 做 Pull，不會自動取得老師教材 Repo 的新內容。
 
-| 名詞 | 用一句話理解 |
-|---|---|
-| Repository（Repo） | 受 Git 管理的專案資料夾與版本歷史 |
-| Clone | 從 GitHub 建立本機副本，包含歷史與遠端連線 |
-| Fetch／Pull | 查詢遠端更新，並將新提交同步至既有本機副本 |
-| Commit | 把選取的變更記錄成本機版本 |
-| Push | 將本機提交上傳至自己的 GitHub Repo |
-| `.gitignore` | 指定不納入追蹤的本機設定與生成檔案 |
-| `README.md` | 說明操作方式、作業內容與實際驗證結果 |
+| 名詞               | 用一句話理解                               |
+| ------------------ | ------------------------------------------ |
+| Repository（Repo） | 受 Git 管理的專案資料夾與版本歷史          |
+| Clone              | 從 GitHub 建立本機副本，包含歷史與遠端連線 |
+| Fetch／Pull        | 查詢遠端更新，並將新提交同步至既有本機副本 |
+| Commit             | 把選取的變更記錄成本機版本                 |
+| Push               | 將本機提交上傳至自己的 GitHub Repo         |
+| `.gitignore`       | 指定不納入追蹤的本機設定與生成檔案         |
+| `README.md`        | 說明操作方式、作業內容與實際驗證結果       |
 
 ## 三、第一次使用：建立並 Clone 自己的 Repo
 
@@ -74,14 +74,14 @@ https://github.com/shuochenghu/115_1_GenAI-App-Development-Student.git
 
 登入 GitHub，選 <font color="#1565C0"><b>＋ → New repository</b></font>：
 
-| 欄位 | 設定 |
-|---|---|
-| Owner | 自己的 GitHub 帳號 |
-| Repository name | `115_1_GenAI-APP-Development` |
-| Description | 生成式 AI 應用開發：課堂實作與作業 |
-| Visibility | 課堂建議 Public；若使用 Private，依老師指定方式提供檢視權限 |
-| Add README | 勾選 |
-| Add .gitignore | 選擇 Python，稍後補上課程忽略規則 |
+| 欄位            | 設定                                                        |
+| --------------- | ----------------------------------------------------------- |
+| Owner           | 自己的 GitHub 帳號                                          |
+| Repository name | `115_1_GenAI-APP-Development`                               |
+| Description     | 生成式 AI 應用開發：課堂實作與作業                          |
+| Visibility      | 課堂建議 Public；若使用 Private，依老師指定方式提供檢視權限 |
+| Add README      | 勾選                                                        |
+| Add .gitignore  | 選擇 Python，稍後補上課程忽略規則                           |
 
 按 **Create repository**。已有同名 Repo 就直接使用，不必每週建立新的 Repo。
 
@@ -140,11 +140,11 @@ https://github.com/你的帳號/115_1_GenAI-APP-Development
 
 下表只示範來源與目的位置如何對應，其他週次依老師公告的名稱操作。
 
-| 項目 | 第 7 週路徑範例 |
-|---|---|
-| 老師教材 Repo 內的來源 | `week07/` |
-| 學生自己 Repo 內的目的位置 | `week07-streamlit-app/` |
-| 一個程式的位置 | `week07-streamlit-app/student/01_inputs.py` |
+| 項目                       | 第 7 週路徑範例                             |
+| -------------------------- | ------------------------------------------- |
+| 老師教材 Repo 內的來源     | `week07/`                                   |
+| 學生自己 Repo 內的目的位置 | `week07-streamlit-app/`                     |
+| 一個程式的位置             | `week07-streamlit-app/student/01_inputs.py` |
 
 把來源 `week07/` 複製到自己的 Repo 根目錄，再將複製後的資料夾命名為 `week07-streamlit-app/`。
 
@@ -227,13 +227,13 @@ Thumbs.db
 
 保留老師提供的操作說明，加入自己的簡短紀錄：
 
-| 項目 | 記錄內容 |
-|---|---|
-| 作業完成情形 | 完成、部分完成或未完成的項目，以及自己的修改 |
-| 啟動方式 | 實際資料夾、命令、環境與必要設定 |
-| 驗證結果 | 測試輸入、操作、實際結果、問題與未測項目 |
-| AI 協助 | 工具、協助內容、自己修改與親自驗證事項；未使用則註明 |
-| 部署 | 當週有要求或自行選做時，附網址與實際驗證結果 |
+| 項目         | 記錄內容                                             |
+| ------------ | ---------------------------------------------------- |
+| 作業完成情形 | 完成、部分完成或未完成的項目，以及自己的修改         |
+| 啟動方式     | 實際資料夾、命令、環境與必要設定                     |
+| 驗證結果     | 測試輸入、操作、實際結果、問題與未測項目             |
+| AI 協助      | 工具、協助內容、自己修改與親自驗證事項；未使用則註明 |
+| 部署         | 當週有要求或自行選做時，附網址與實際驗證結果         |
 
 <font color="#C62828"><b>實測與未測項目要分開記錄，不能把固定示範或假回應當成真實 API 成果。</b></font> 不在程式、README 或截圖中放真實金鑰與個資。
 
@@ -243,12 +243,12 @@ Thumbs.db
 
 ## 七、離開教室與回家接續
 
-| 時機 | 操作 |
-|---|---|
-| 離開目前電腦前 | 儲存 → 檢查 → Commit → Push → GitHub 網頁確認 |
-| 到另一台電腦第一次工作 | Clone 自己的 Repo → 依當週 README 準備環境 |
-| 另一台電腦已有自己的副本 | 確認本機進度 → Fetch／Pull → 啟用正確環境 |
-| 回教室繼續 | 先同步自己在家已 Push 的進度，再開始修改 |
+| 時機                     | 操作                                          |
+| ------------------------ | --------------------------------------------- |
+| 離開目前電腦前           | 儲存 → 檢查 → Commit → Push → GitHub 網頁確認 |
+| 到另一台電腦第一次工作   | Clone 自己的 Repo → 依當週 README 準備環境    |
+| 另一台電腦已有自己的副本 | 確認本機進度 → Fetch／Pull → 啟用正確環境     |
+| 回教室繼續               | 先同步自己在家已 Push 的進度，再開始修改      |
 
 <font color="#C62828"><b>只做 Commit 就離開，另一台電腦無法從 GitHub 取得這筆尚未 Push 的進度。</b></font>
 
@@ -275,10 +275,10 @@ Thumbs.db
 
 找出當週 README 指定的入口檔案。部署使用「Repo＋分支＋入口路徑」，不要求所有週次都叫 `app.py` 或都放在 `student/`。
 
-| 設定 | 第 7 週路徑範例 | 其他週次怎麼換 |
-|---|---|---|
-| Repository | `你的帳號/115_1_GenAI-APP-Development` | 沿用自己的學期 Repo |
-| Branch | `main` | 使用保存作業的分支 |
+| 設定           | 第 7 週路徑範例                             | 其他週次怎麼換                             |
+| -------------- | ------------------------------------------- | ------------------------------------------ |
+| Repository     | `你的帳號/115_1_GenAI-APP-Development`      | 沿用自己的學期 Repo                        |
+| Branch         | `main`                                      | 使用保存作業的分支                         |
 | Main file path | `week07-streamlit-app/student/01_inputs.py` | 替換為當週入口相對於 Repo 根目錄的完整路徑 |
 
 <font color="#C62828"><b>部署路徑使用 /，不要使用 Windows 的反斜線。</b></font> 一個部署指定一個入口；多個 `.py` 不會自動變成網站的多個頁面。
@@ -334,16 +334,16 @@ OPENAI_API_KEY = "填入你自己的API金鑰"
 
 ## 十、常見問題與版本回復
 
-| 問題 | 先檢查什麼 |
-|---|---|
-| 老師教材網頁顯示 404 | 網址是否正確、老師是否已完成公開設定 |
-| Clone 或 Push 失敗 | 自己的帳號、Repo 網址、網路與權限 |
-| Changes 沒有修改 | 是否儲存、是否選對 Repo、是否改到 Repo 外的另一份檔案 |
-| 換電腦看不到進度 | 前一台是否已 Push，這台是否 Fetch／Pull |
-| Clone 後不能啟動 | 是否依當週 README 重建環境與本機設定 |
-| 金鑰或虛擬環境出現在 Changes | 根目錄忽略規則是否正確，檔案是否已被追蹤 |
-| Cloud 找不到程式或套件 | 入口路徑、分支、大小寫、套件清單位置與 Push 狀態 |
-| Cloud 顯示缺少設定 | Secrets 名稱、格式及程式讀取方式是否一致 |
+| 問題                         | 先檢查什麼                                            |
+| ---------------------------- | ----------------------------------------------------- |
+| 老師教材網頁顯示 404         | 網址是否正確、老師是否已完成公開設定                  |
+| Clone 或 Push 失敗           | 自己的帳號、Repo 網址、網路與權限                     |
+| Changes 沒有修改             | 是否儲存、是否選對 Repo、是否改到 Repo 外的另一份檔案 |
+| 換電腦看不到進度             | 前一台是否已 Push，這台是否 Fetch／Pull               |
+| Clone 後不能啟動             | 是否依當週 README 重建環境與本機設定                  |
+| 金鑰或虛擬環境出現在 Changes | 根目錄忽略規則是否正確，檔案是否已被追蹤              |
+| Cloud 找不到程式或套件       | 入口路徑、分支、大小寫、套件清單位置與 Push 狀態      |
+| Cloud 顯示缺少設定           | Secrets 名稱、格式及程式讀取方式是否一致              |
 
 在 GitHub Desktop 的 <font color="#1565C0"><b>History</b></font> 選取提交，可以查看當次差異。需要取消某筆提交時，先保存目前進度，再請老師協助判斷是否使用 **Revert Changes in Commit**。
 
@@ -366,13 +366,13 @@ Revert 會新增一筆反向修改，並非直接回到所選提交當時的完�
 
 ## 附錄：常用操作對照
 
-| 動作 | 命令列（選讀） | GitHub Desktop |
-|---|---|---|
-| 取得自己的本機副本 | `git clone <自己的Repo網址>` | File → Clone repository |
-| 查看變更 | `git status`、`git diff` | Changes 與右側差異 |
-| 選取要記錄的檔案 | `git add <檔案路徑>` | 在 Changes 勾選檔案 |
-| 記錄版本 | `git commit -m "具體說明"` | 填 Summary → Commit to main |
-| 上傳提交 | `git push` | Push origin |
-| 查詢與下載更新 | `git fetch`，確認後 `git pull` | Fetch origin → Pull origin |
-| 查看歷史 | `git log` | History |
-| 取消指定提交的修改 | `git revert <提交編號>` | History → Revert Changes in Commit |
+| 動作               | 命令列（選讀）                 | GitHub Desktop                     |
+| ------------------ | ------------------------------ | ---------------------------------- |
+| 取得自己的本機副本 | `git clone <自己的Repo網址>`   | File → Clone repository            |
+| 查看變更           | `git status`、`git diff`       | Changes 與右側差異                 |
+| 選取要記錄的檔案   | `git add <檔案路徑>`           | 在 Changes 勾選檔案                |
+| 記錄版本           | `git commit -m "具體說明"`     | 填 Summary → Commit to main        |
+| 上傳提交           | `git push`                     | Push origin                        |
+| 查詢與下載更新     | `git fetch`，確認後 `git pull` | Fetch origin → Pull origin         |
+| 查看歷史           | `git log`                      | History                            |
+| 取消指定提交的修改 | `git revert <提交編號>`        | History → Revert Changes in Commit |
