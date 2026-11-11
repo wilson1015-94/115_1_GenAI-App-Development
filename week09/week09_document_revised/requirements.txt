@@ -1,0 +1,4 @@
+# 本機Python 3.14課堂環境；核心TXT／清理／切塊不使用OpenAI。
+streamlit==1.63.0
+pypdf==6.18.1
+python-docx==1.2.0
