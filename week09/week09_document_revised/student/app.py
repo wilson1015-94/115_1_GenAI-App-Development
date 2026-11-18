@@ -21,11 +21,15 @@ def clean_text(text: str) -> str:
     """TODO A：傳入str，回傳保留段落、合併行內空白的新字串。"""
     # 已提供：統一換行，之後只需處理\n。
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
-    # TODO A：
     # 1. 逐行合併多餘空白（參考第4節的示範）。
+    lines = []
+    for line in normalized.split("\n"):
+        lines.append(" ".join(line.split()))
+    merged = "\n".join(lines)
     # 2. 連續空白行最多保留一個（參考4-1的re.sub）。
+    collapsed = re.sub(r"\n{3,}", "\n\n", merged)
     # 3. 去掉頭尾空白後return；日期、數字、標點不能刪。
-    raise NotImplementedError("請完成TODO A：文字清理")
+    return collapsed.strip()
 
 
 def chunk_text(text: str, chunk_size: int = 800, overlap: int = 120) -> list[dict]:

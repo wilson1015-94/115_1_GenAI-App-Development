@@ -1,0 +1,26 @@
+[
+  {
+    "type": "原句",
+    "query": "活動地點在哪裡？",
+    "expected_chunk_id": 0,
+    "evidence": "地點為圖書館討論室"
+  },
+  {
+    "type": "改寫",
+    "query": "這場讀書交流辦在哪個空間？",
+    "expected_chunk_id": 0,
+    "evidence": "地點為圖書館討論室"
+  },
+  {
+    "type": "資訊未提供",
+    "query": "參加費用是多少？",
+    "expected_chunk_id": 2,
+    "evidence": "報名網址與費用尚未提供"
+  },
+  {
+    "type": "文件外",
+    "query": "火星的平均氣溫是多少？",
+    "expected_chunk_id": null,
+    "evidence": null
+  }
+]
