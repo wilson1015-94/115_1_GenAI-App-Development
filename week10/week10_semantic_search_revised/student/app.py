@@ -76,11 +76,18 @@ def rank_chunks(chunks, vectors, query_vector, top_k=3, min_score=0.0):
     if not any(query_vector):
         return []
 
-    # TODO A：
     # 1. 逐筆用cosine_similarity算出score；score >= min_score才保留。
     # 2. 用dict(item)複製來源資料，再加入"score"欄位（不可改到原本的chunks）。
     # 3. 依score由高到低排序，回傳前top_k筆；沒有合格片段就回傳[]。
-    raise NotImplementedError("請完成TODO A：來源保留、篩選與排序")
+    results = []
+    for item, vector in zip(chunks, vectors):
+        score = cosine_similarity(vector, query_vector)
+        if score >= min_score:
+            hit = dict(item)
+            hit["score"] = score
+            results.append(hit)
+    results.sort(key=lambda item: item["score"], reverse=True)
+    return results[:top_k]
 
 
 # ---------- 2. 模式與成功資料 ----------
