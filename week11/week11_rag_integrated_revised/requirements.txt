@@ -1,0 +1,6 @@
+# 課程目標組合；已測環境與未測項目見README。
+streamlit==1.63.0
+openai==2.49.0
+python-dotenv==1.2.3
+pypdf==6.18.1
+python-docx==1.2.0

@@ -1,0 +1,4 @@
+# 課程固定直接依賴；Python3.14，目標環境需另行驗證。
+streamlit==1.63.0
+openai==2.49.0
+python-dotenv==1.2.3
